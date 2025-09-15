@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BiyaheTayo - Break Language Barriers in Tarlac Province</title>
+    <link rel="stylesheet" href="global.css">
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet"/>
+  </head>
+  <body class="bg-white text-gray-800">
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
+      <nav class="flex items-center justify-between px-6 py-4">
+        <div class="flex items-center">
+          <h1 class="text-2xl pacifico-font text-primary">BiyaheTayo</h1>
+        </div>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="#home" class="text-gray-700 hover:text-primary transition-colors">Home</a>
+          <a href="#translations" class="text-gray-700 hover:text-primary transition-colors">Translations</a>
+          <a href="#dictionary" class="text-gray-700 hover:text-primary transition-colors">Dictionary</a>
+          <a href="#about" class="text-gray-700 hover:text-primary transition-colors">About</a>
+          <a href="#contact" class="text-gray-700 hover:text-primary transition-colors">Contact</a>
+        </div>
+        <div class="flex items-center">
+          <button id="mobileMenuBtn" class="md:hidden p-2">
+            <div class="w-6 h-6 flex items-center justify-center">
+              <i class="ri-menu-line"></i>
+            </div>
+          </button>
+        </div>
+      </nav>
+      <!-- Mobile Menu -->
+      <div id="mobileMenu" class="md:hidden bg-white border-t border-gray-100 hidden">
+        <div class="px-6 py-4 space-y-4">
+          <a href="#home" class="block text-gray-700">Home</a>
+          <a href="#translations" class="block text-gray-700">Translations</a>
+          <a href="#dictionary" class="block text-gray-700">Dictionary</a>
+          <a href="#about" class="block text-gray-700">About</a>
+          <a href="#contact" class="block text-gray-700">Contact</a>
+        </div>
+      </div>
+    </header>
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center hero-section">
+      <div class="absolute inset-0 hero-overlay"></div>
+      <div class="relative w-full px-6 py-20">
+        <div class="max-w-6xl mx-auto">
+          <div class="max-w-2xl">
+            <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">Break Language Barriers in
+              <span class="text-primary">Tarlac Province</span>
+            </h1>
+            <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+              Connect with locals, explore authentic experiences, and navigate
+              Tarlac with confidence using our comprehensive translation
+              platform supporting English, Kapampangan, Ilocano, and Tagalog.
+            </p>
+            <div class="flex flex-wrap gap-3">
+              <span class="text-sm text-gray-500 mr-2">Supported Languages:</span>
+              <span class="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-sm">English</span>
+              <span class="bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm">Kapampangan</span>
+              <span class="bg-orange-50 text-orange-700 px-3 py-1 rounded-full text-sm">Ilocano</span>
+              <span class="bg-purple-50 text-purple-700 px-3 py-1 rounded-full text-sm">Tagalog</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Translation Interface -->
+    <section id="translations" class="py-20 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-gray-900 mb-4">
+            Real-Time Translation
+          </h2>
+          <p class="text-xl text-gray-600">
+            Instantly translate speech and text between local dialects
+          </p>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg p-8">
+          <div class="grid md:grid-cols-2 gap-8">
+            <!-- Input Section -->
+            <div class="space-y-6">
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2">From</label>
+                <div class="relative">
+                  <button id="inputLangBtn" class="w-full flex items-center justify-between px-4 py-3 border border-gray-200 rounded-lg hover:border-primary transition-colors">
+                    <span>English</span>
+                    <div class="w-5 h-5 flex items-center justify-center">
+                      <i class="ri-arrow-down-s-line"></i>
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <div class="relative">
+                <textarea id="inputText" placeholder="Type your message here..." class="w-full h-32 p-4 border border-gray-200 rounded-lg resize-none focus:border-primary focus:outline-none text-sm"></textarea>
+                <div class="absolute bottom-3 right-3 flex space-x-2">
+                  <button
+                    class="p-2 text-gray-400 hover:text-primary transition-colors">
+                    <div class="w-5 h-5 flex items-center justify-center">
+                      <i id="ri-mic-line" class="ri-mic-line"></i>
+                    </div>
+                  </button>
+                  <button class="p-2 text-gray-400 hover:text-primary transition-colors">
+                    <div class="w-5 h-5 flex items-center justify-center">
+                      <i id="ri-delete-bin-line" class="ri-delete-bin-line"></i>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Output Section -->
+            <div class="space-y-6">
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-2">To</label>
+                    <div class="relative">
+                      <button id="outputLangBtn" class="w-full flex items-center justify-between px-4 py-3 border border-gray-200 rounded-lg hover:border-primary transition-colors">
+                        <span>Kapampangan</span>
+                          <div class="w-5 h-5 flex items-center justify-center">
+                            <i class="ri-arrow-down-s-line"></i>
+                        </div>
+                    </button>
+                </div>
+              </div>
+              <div class="relative">
+                <div class="w-full h-32 p-4 border border-gray-200 rounded-lg bg-gray-50 text-sm" id="outputText"></div>
+                <div class="absolute bottom-3 right-3 flex space-x-2">
+                  <button class="p-2 text-gray-400 hover:text-primary transition-colors">
+                    <div class="w-5 h-5 flex items-center justify-center">
+                      <i class="ri-volume-up-line"></i>
+                    </div>
+                  </button>
+                  <button class="p-2 text-gray-400 hover:text-primary transition-colors">
+                    <div class="w-5 h-5 flex items-center justify-center">
+                      <i class="ri-file-copy-line"></i>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Dialect Dictionary -->
+    <section id="dictionary" class="py-20">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-gray-900 mb-4">Dialect Dictionary</h2>
+          <p class="text-xl text-gray-600">Common phrases and expressions for everyday conversations</p>
+        </div>
+        <div class="mb-8">
+          <div class="flex flex-col md:flex-row gap-4 mb-6">
+            <div class="relative flex-1">
+              <input type="text" placeholder="Search phrases..." class="w-full pl-12 pr-4 py-3 border border-gray-200 rounded-lg focus:border-primary focus:outline-none text-sm"/>
+              <div class="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 flex items-center justify-center text-gray-400">
+                <i class="ri-search-line"></i>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <button class="px-4 py-2 bg-primary text-white rounded-full text-sm hover:bg-opacity-90 transition-all whitespace-nowrap">All</button>
+              <button class="px-4 py-2 border border-gray-200 text-gray-700 rounded-full text-sm hover:border-primary hover:text-primary transition-all whitespace-nowrap">Greetings</button>
+              <button class="px-4 py-2 border border-gray-200 text-gray-700 rounded-full text-sm hover:border-primary hover:text-primary transition-all whitespace-nowrap">Directions</button>
+              <button class="px-4 py-2 border border-gray-200 text-gray-700 rounded-full text-sm hover:border-primary hover:text-primary transition-all whitespace-nowrap">Shopping</button>
+              <button class="px-4 py-2 border border-gray-200 text-gray-700 rounded-full text-sm hover:border-primary hover:text-primary transition-all whitespace-nowrap">Food</button>
+            </div>
+          </div>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="card p-6">
+            <div class="mb-4">
+              <span class="bg-blue-50 text-blue-700 px-2 py-1 rounded text-xs">Greetings</span>
+            </div>
+            <h3 class="font-semibold text-gray-900 mb-3">Good morning</h3>
+            <div class="space-y-2 text-sm">
+              <div>
+                <span class="text-gray-500">Kapampangan:</span> Mayap a abak
+              </div>
+              <div>
+                <span class="text-gray-500">Ilocano:</span> Naimbag nga bigat
+              </div>
+              <div>
+                <span class="text-gray-500">Tagalog:</span> Magandang umaga
+              </div>
+            </div>
+            <div class="mt-4 pt-4 border-t border-gray-100">
+              <span class="text-xs text-gray-500">Pronunciation: MAH-yap ah AH-bak</span>
+            </div>
+          </div>
+          <div class="card p-6">
+            <div class="mb-4">
+              <span class="bg-green-50 text-green-700 px-2 py-1 rounded text-xs">Directions</span>
+            </div>
+            <h3 class="font-semibold text-gray-900 mb-3">
+              Where is the market?
+            </h3>
+            <div class="space-y-2 text-sm">
+              <div>
+                <span class="text-gray-500">Kapampangan:</span> Nukarin ya ing
+                palengki?
+              </div>
+              <div>
+                <span class="text-gray-500">Ilocano:</span> Sadino ti merkado?
+              </div>
+              <div>
+                <span class="text-gray-500">Tagalog:</span> Nasaan ang palengke?
+              </div>
+            </div>
+            <div class="mt-4 pt-4 border-t border-gray-100">
+              <span class="text-xs text-gray-500">Pronunciation: noo-KAH-rin yah ing pah-LENG-ki</span>
+            </div>
+          </div>
+          <div class="card p-6">
+            <div class="mb-4">
+              <span
+                class="bg-orange-50 text-orange-700 px-2 py-1 rounded text-xs">Shopping</span>
+            </div>
+            <h3 class="font-semibold text-gray-900 mb-3">How much is this?</h3>
+            <div class="space-y-2 text-sm">
+              <div>
+                <span class="text-gray-500">Kapampangan:</span> Magkanu ya ini?
+              </div>
+              <div>
+                <span class="text-gray-500">Ilocano:</span> Mano ti gatad daytoy?
+              </div>
+              <div>
+                <span class="text-gray-500">Tagalog:</span> Magkano ito?
+              </div>
+            </div>
+            <div class="mt-4 pt-4 border-t border-gray-100">
+              <span class="text-xs text-gray-500">Pronunciation: mag-KAH-nu yah ee-NEE</span>
+            </div>
+          </div>
+          <div class="card p-6">
+            <div class="mb-4">
+              <span
+                class="bg-purple-50 text-purple-700 px-2 py-1 rounded text-xs">Food</span>
+            </div>
+            <h3 class="font-semibold text-gray-900 mb-3">I'm hungry</h3>
+            <div class="space-y-2 text-sm">
+              <div>
+                <span class="text-gray-500">Kapampangan:</span> Mabayat ku
+              </div>
+              <div><span class="text-gray-500">Ilocano:</span> Mabisinek</div>
+              <div><span class="text-gray-500">Tagalog:</span> Gutom ako</div>
+            </div>
+            <div class="mt-4 pt-4 border-t border-gray-100">
+              <span class="text-xs text-gray-500">Pronunciation: mah-BAH-yat koo</span>
+            </div>
+          </div>
+          <div class="card p-6">
+            <div class="mb-4">
+              <span class="bg-red-50 text-red-700 px-2 py-1 rounded text-xs">Emergency</span>
+            </div>
+            <h3 class="font-semibold text-gray-900 mb-3">Help me please</h3>
+            <div class="space-y-2 text-sm">
+              <div>
+                <span class="text-gray-500">Kapampangan:</span> Saup yu ku
+              </div>
+              <div><span class="text-gray-500">Ilocano:</span> Tulongannak</div>
+              <div>
+                <span class="text-gray-500">Tagalog:</span> Tulungan mo ako
+              </div>
+            </div>
+            <div class="mt-4 pt-4 border-t border-gray-100">
+              <span class="text-xs text-gray-500">Pronunciation: SAH-oop yoo koo</span>
+            </div>
+          </div>
+          <div class="card p-6">
+            <div class="mb-4">
+              <span
+                class="bg-yellow-50 text-yellow-700 px-2 py-1 rounded text-xs"
+                >Courtesy</span>
+            </div>
+            <h3 class="font-semibold text-gray-900 mb-3">Thank you</h3>
+            <div class="space-y-2 text-sm">
+              <div><span class="text-gray-500">Kapampangan:</span> Salamat</div>
+              <div><span class="text-gray-500">Ilocano:</span> Agyaman</div>
+              <div><span class="text-gray-500">Tagalog:</span> Salamat</div>
+            </div>
+            <div class="mt-4 pt-4 border-t border-gray-100">
+              <span class="text-xs text-gray-500">Pronunciation: sah-LAH-mat</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="py-20">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <h2 class="text-4xl font-bold text-gray-900 mb-8">About BiyaheTayo</h2>
+        <p class="text-xl text-gray-600 mb-12 leading-relaxed">
+          BiyaheTayo bridges the communication gap between tourists and local
+          communities in Tarlac Province. Our comprehensive platform offers
+          real-time translation services and cultural insights to enhance your
+          travel experience and foster meaningful connections with local people.
+        </p>
+        <div class="grid md:grid-cols-3 gap-8 mb-16">
+          <div class="text-center">
+            <div
+              class="w-16 h-16 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mx-auto mb-4">
+              <i class="ri-group-line text-primary text-2xl"></i>
+            </div>
+            <h3 class="font-semibold text-gray-900 mb-2">For Tourists</h3>
+            <p class="text-gray-600 text-sm">
+              Navigate confidently, ask for directions, and engage with locals
+              in their native language.
+            </p>
+          </div>
+          <div class="text-center">
+            <div
+              class="w-16 h-16 flex items-center justify-center bg-secondary bg-opacity-10 rounded-full mx-auto mb-4">
+              <i class="ri-store-2-line text-secondary text-2xl"></i>
+            </div>
+            <h3 class="font-semibold text-gray-900 mb-2">
+              For Local Businesses
+            </h3>
+            <p class="text-gray-600 text-sm">
+              Attract more customers through better communication and enhanced
+              service delivery.
+            </p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 flex items-center justify-center bg-orange-100 rounded-full mx-auto mb-4">
+              <i class="ri-book-open-line text-orange-600 text-2xl"></i>
+            </div>
+            <h3 class="font-semibold text-gray-900 mb-2">For Researchers</h3>
+            <p class="text-gray-600 text-sm">
+              Access valuable resources for language and tourism-related studies
+              and research.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-900 text-white py-16">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="grid md:grid-cols-4 gap-8 mb-12">
+          <div>
+            <h3 class="text-2xl pacifico-font text-primary mb-4">BiyaheTayo</h3>
+            <p class="text-gray-400 text-sm mb-4">
+              Breaking language barriers and connecting cultures in Tarlac
+              Province.
+            </p>
+            <div class="flex space-x-4">
+              <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-primary transition-colors">
+                <i class="ri-facebook-fill"></i>
+              </a>
+              <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-primary transition-colors">
+                <i class="ri-twitter-fill"></i>
+              </a>
+              <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-primary transition-colors">
+                <i class="ri-instagram-fill"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-4">Quick Links</h4>
+            <ul class="space-y-2 text-sm text-gray-400">
+              <li>
+                <a href="#translations" class="hover:text-white transition-colors">Speech Translation</a>
+              </li>
+              <li>
+                <a href="#translations" class="hover:text-white transition-colors">Text Translation</a>
+              </li>
+              <li>
+                <a href="#dictionary" class="hover:text-white transition-colors">Dialect Dictionary</a>
+              </li>
+              <li>
+                <a href="#about" class="hover:text-white transition-colors">Tourism Guide</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-4">Languages</h4>
+            <ul class="space-y-2 text-sm text-gray-400">
+              <li>English</li>
+              <li>Kapampangan</li>
+              <li>Ilocano</li>
+              <li>Tagalog</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-4">Contact Info</h4>
+            <ul class="space-y-2 text-sm text-gray-400">
+              <li class="flex items-center space-x-2">
+                <div class="w-4 h-4 flex items-center justify-center">
+                  <i class="ri-mail-line"></i>
+                </div>
+                <span>hello@biyahetayo.com</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <div class="w-4 h-4 flex items-center justify-center">
+                  <i class="ri-phone-line"></i>
+                </div>
+                <span>+63 123 456 7890</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <div class="w-4 h-4 flex items-center justify-center">
+                  <i class="ri-map-pin-line"></i>
+                </div>
+                <span>Tarlac City, Philippines</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+          <p class="text-gray-400 text-sm">
+            © 2025 BiyaheTayo. All rights reserved.
+          </p>
+          <div class="flex space-x-6 mt-4 md:mt-0">
+            <a href="privacy-policy.html" class="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>
+            <a href="terms-and-conditions.html" class="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</a>
+            <a href="feedback-support.html" class="text-gray-400 hover:text-white text-sm transition-colors">Feedback & Support</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,490 @@
+id,english,category
+1,Hello,Most Common
+2,Hi,Most Common
+3,Hey,Most Common
+4,Good morning,Most Common
+5,Good afternoon,Most Common
+6,Good evening,Most Common
+7,Good night,Most Common
+8,Thank you,Most Common
+9,Thanks,Most Common
+10,Thanks a lot,Most Common
+11,Thanks so much,Most Common
+12,Thanks a million,Most Common
+13,You’re welcome,Most Common
+14,No problem,Most Common
+15,Don’t mention it,Most Common
+16,My pleasure,Most Common
+17,Of course,Most Common
+18,Yes,Most Common
+19,No,Most Common
+20,Maybe,Most Common
+21,Please,Most Common
+22,Excuse me,Most Common
+23,Sorry,Most Common
+24,I’m sorry,Most Common
+25,No worries,Most Common
+26,It’s okay,Most Common
+27,Never mind,Most Common
+28,All good,Most Common
+29,Goodbye,Most Common
+30,Bye,Most Common
+31,See you later,Most Common
+32,See you soon,Most Common
+33,Take care,Most Common
+34,Best wishes,Most Common
+35,Good luck,Most Common
+36,Congratulations,Most Common
+37,Well done,Most Common
+38,Cheers,Most Common
+39,Safe travels,Most Common
+40,Happy birthday,Most Common
+41,Merry Christmas,Most Common
+42,Happy New Year,Most Common
+43,How are you?,Basics
+44,How’s it going?,Basics
+45,How do you do?,Basics
+46,What is your name?,Basics
+47,My name is...,Basics
+48,Nice to meet you,Basics
+49,It’s a pleasure to meet you,Basics
+50,Where are you from?,Basics
+51,I am from the Philippines,Basics
+52,I am from the United States,Basics
+53,I am from Japan,Basics
+54,I am from China,Basics
+55,I am from India,Basics
+56,I am from Europe,Basics
+57,I am from Australia,Basics
+58,I am a student,Basics
+59,I am a teacher,Basics
+60,I am a worker,Basics
+61,I am a tourist,Basics
+62,What do you do?,Basics
+63,I work as a...,Basics
+64,I am learning English,Basics
+65,Do you speak English?,Basics
+66,I speak a little English,Basics
+67,I don’t speak English,Basics
+68,I understand,Basics
+69,I don’t understand,Basics
+70,Can you repeat that?,Basics
+71,Please speak slowly,Basics
+72,Can you write it down?,Basics
+73,How old are you?,Basics
+74,I am twenty years old,Basics
+75,I am thirty years old,Basics
+76,Where do you live?,Basics
+77,I live in Manila,Basics
+78,I live in New York,Basics
+79,I live in Tokyo,Basics
+80,Long time no see,Social
+81,How have you been?,Social
+82,What’s up?,Social
+83,Nothing much,Social
+84,Same here,Social
+85,I love you,Social
+86,I miss you,Social
+87,I like you,Social
+88,I don’t like this,Social
+89,Do you want to be friends?,Social
+90,Let’s hang out,Social
+91,Can I call you?,Social
+92,Can I message you?,Social
+93,What’s your phone number?,Social
+94,What’s your email address?,Social
+95,You are beautiful,Social
+96,You are handsome,Social
+97,You are kind,Social
+98,You are smart,Social
+99,You are funny,Social
+100,You are amazing,Social
+101,I trust you,Social
+102,I need you,Social
+103,I care about you,Social
+104,I am proud of you,Social
+105,I support you,Social
+106,That’s interesting,Social
+107,That’s funny,Social
+108,That’s great,Social
+109,That’s wonderful,Social
+110,That’s amazing,Social
+111,That’s perfect,Social
+112,Really?,Social
+113,Are you serious?,Social
+114,No way!,Social
+115,I agree,Social
+116,I don’t agree,Social
+117,I think so,Social
+118,I don’t think so,Social
+119,Exactly,Social
+120,Absolutely,Social
+121,Definitely,Social
+122,Of course,Social
+123,Where is the bus station?,Travel
+124,Where is the train station?,Travel
+125,Where is the airport?,Travel
+126,I need a taxi,Travel
+127,"Call a taxi, please",Travel
+128,How much is the ticket?,Travel
+129,What platform is the train?,Travel
+130,Where is the hotel?,Travel
+131,Do you have a reservation?,Travel
+132,I have a reservation,Travel
+133,I need directions,Travel
+134,Can you show me on the map?,Travel
+135,Is it far from here?,Travel
+136,Turn left,Travel
+137,Turn right,Travel
+138,Go straight ahead,Travel
+139,"Stop here, please",Travel
+140,Take me to the hotel,Travel
+141,Where is the bathroom?,Travel
+142,Where is the restroom?,Travel
+143,Where is the toilet?,Travel
+144,Where is the nearest ATM?,Travel
+145,Where is the bank?,Travel
+146,Where is the post office?,Travel
+147,Where is the police station?,Travel
+148,Where is the hospital?,Travel
+149,Where is the pharmacy?,Travel
+150,What time does the bus leave?,Travel
+151,When does the train arrive?,Travel
+152,Do I need a visa?,Travel
+153,Where is passport control?,Travel
+154,Where is baggage claim?,Travel
+155,Where is the arrival gate?,Travel
+156,Where is the departure gate?,Travel
+157,I need to check in,Travel
+158,I need to check out,Travel
+159,I lost my luggage,Travel
+160,I need help with my bags,Travel
+161,Can I rent a car?,Travel
+162,Where is the gas station?,Travel
+163,How far is it?,Travel
+164,Can you take me there?,Travel
+165,What time does the flight leave?,Travel
+166,What time does the flight arrive?,Travel
+167,Where is the boarding gate?,Travel
+168,I missed my flight,Travel
+169,My flight is delayed,Travel
+170,Can I change my ticket?,Travel
+171,Can I cancel my ticket?,Travel
+172,Where can I buy a ticket?,Travel
+173,I am hungry,Food & Dining
+174,I am thirsty,Food & Dining
+175,Can I see the menu?,Food & Dining
+176,"Check, please",Food & Dining
+177,"Water, please",Food & Dining
+178,Do you have vegetarian food?,Food & Dining
+179,Do you have vegan food?,Food & Dining
+180,Do you have gluten-free food?,Food & Dining
+181,I am allergic to peanuts,Food & Dining
+182,What do you recommend?,Food & Dining
+183,Can I get this without salt?,Food & Dining
+184,Can I get this spicy?,Food & Dining
+185,Can I get more napkins?,Food & Dining
+186,The food is delicious,Food & Dining
+187,The food is cold,Food & Dining
+188,I don’t like this,Food & Dining
+189,I like this,Food & Dining
+190,Can I get another one?,Food & Dining
+191,I need a fork,Food & Dining
+192,I need a spoon,Food & Dining
+193,I need a knife,Food & Dining
+194,Do you serve breakfast?,Food & Dining
+195,Do you serve lunch?,Food & Dining
+196,Do you serve dinner?,Food & Dining
+197,Where is the nearest restaurant?,Food & Dining
+198,Can I reserve a table?,Food & Dining
+199,I would like some rice,Food & Dining
+200,I would like some chicken,Food & Dining
+201,I would like some fish,Food & Dining
+202,I would like some noodles,Food & Dining
+203,Can I have one coffee?,Food & Dining
+204,Can I have two coffees?,Food & Dining
+205,Can I have three teas?,Food & Dining
+206,Can I have a bottle of water?,Food & Dining
+207,Can I have a glass of wine?,Food & Dining
+208,Cheers to our meal,Food & Dining
+209,This is too salty,Food & Dining
+210,This is too sweet,Food & Dining
+211,This is too spicy,Food & Dining
+212,This is perfect,Food & Dining
+213,Can I pay by card?,Food & Dining
+214,Do you split the bill?,Food & Dining
+215,The service is great,Food & Dining
+216,The service is bad,Food & Dining
+217,The food is expensive,Food & Dining
+218,The food is cheap,Food & Dining
+219,The food is fresh,Food & Dining
+220,The food is hot,Food & Dining
+221,How much does it cost?,Shopping & Money
+222,What is the price?,Shopping & Money
+223,Can I try this on?,Shopping & Money
+224,Do you accept credit cards?,Shopping & Money
+225,Do you accept cash?,Shopping & Money
+226,I would like to buy this,Shopping & Money
+227,Can you give me a discount?,Shopping & Money
+228,It’s too expensive,Shopping & Money
+229,Do you have this in another color?,Shopping & Money
+230,Do you have this in another size?,Shopping & Money
+231,Where is the fitting room?,Shopping & Money
+232,"I’m just looking, thank you",Shopping & Money
+233,I need a receipt,Shopping & Money
+234,Can I return this?,Shopping & Money
+235,Can I exchange this?,Shopping & Money
+236,I want a refund,Shopping & Money
+237,Is it on sale?,Shopping & Money
+238,Do you sell souvenirs?,Shopping & Money
+239,Where is the cashier?,Shopping & Money
+240,Is this new?,Shopping & Money
+241,Do you sell clothes?,Shopping & Money
+242,Do you sell shoes?,Shopping & Money
+243,Do you sell electronics?,Shopping & Money
+244,How much is this shirt?,Shopping & Money
+245,How much is this bag?,Shopping & Money
+246,Is this the final price?,Shopping & Money
+247,That’s too much,Shopping & Money
+248,Can you make it cheaper?,Shopping & Money
+249,Do you have a warranty?,Shopping & Money
+250,Is this authentic?,Shopping & Money
+251,Where is the grocery store?,Shopping & Money
+252,Where is the supermarket?,Shopping & Money
+253,I need some bread,Shopping & Money
+254,I need some rice,Shopping & Money
+255,I need some fruit,Shopping & Money
+256,I need some vegetables,Shopping & Money
+257,I need some milk,Shopping & Money
+258,I need some eggs,Shopping & Money
+259,I need some sugar,Shopping & Money
+260,I need some salt,Shopping & Money
+261,Can I pay in dollars?,Shopping & Money
+262,Can I pay in pesos?,Shopping & Money
+263,Can I pay in euros?,Shopping & Money
+264,Can I pay in yen?,Shopping & Money
+265,I need a doctor,Emergencies & Health
+266,Call the police,Emergencies & Health
+267,Call an ambulance,Emergencies & Health
+268,I feel sick,Emergencies & Health
+269,I need medicine,Emergencies & Health
+270,Where is the hospital?,Emergencies & Health
+271,Where is the pharmacy?,Emergencies & Health
+272,I have a headache,Emergencies & Health
+273,I have a stomachache,Emergencies & Health
+274,I am allergic to...,Emergencies & Health
+275,Can you help me?,Emergencies & Health
+276,It’s an emergency,Emergencies & Health
+277,I don’t feel well,Emergencies & Health
+278,I need a dentist,Emergencies & Health
+279,I feel dizzy,Emergencies & Health
+280,I am lost,Emergencies & Health
+281,Can you help me find my hotel?,Emergencies & Health
+282,I need water,Emergencies & Health
+283,I need help right away,Emergencies & Health
+284,Where is the emergency room?,Emergencies & Health
+285,I need to see a nurse,Emergencies & Health
+286,Do you have painkillers?,Emergencies & Health
+287,Do you have bandages?,Emergencies & Health
+288,I cut my finger,Emergencies & Health
+289,I sprained my ankle,Emergencies & Health
+290,I have a fever,Emergencies & Health
+291,I can’t breathe,Emergencies & Health
+292,I feel weak,Emergencies & Health
+293,Please call a doctor,Emergencies & Health
+294,There is a fire,Emergencies & Health
+295,I need the fire department,Emergencies & Health
+296,I lost my passport,Emergencies & Health
+297,I lost my wallet,Emergencies & Health
+298,I was robbed,Emergencies & Health
+299,My bag was stolen,Emergencies & Health
+300,I had an accident,Emergencies & Health
+301,My car broke down,Emergencies & Health
+302,This is my mother,Family & People
+303,This is my father,Family & People
+304,This is my sister,Family & People
+305,This is my brother,Family & People
+306,This is my wife,Family & People
+307,This is my husband,Family & People
+308,This is my son,Family & People
+309,This is my daughter,Family & People
+310,This is my grandmother,Family & People
+311,This is my grandfather,Family & People
+312,This is my aunt,Family & People
+313,This is my uncle,Family & People
+314,This is my cousin,Family & People
+315,This is my friend,Family & People
+316,This is my neighbor,Family & People
+317,This is my classmate,Family & People
+318,This is my colleague,Family & People
+319,This is my boss,Family & People
+320,This is my teacher,Family & People
+321,This is my student,Family & People
+322,What time is it?,Time & Numbers
+323,It’s early,Time & Numbers
+324,It’s late,Time & Numbers
+325,Today is a good day,Time & Numbers
+326,What day is it?,Time & Numbers
+327,What is the date today?,Time & Numbers
+328,It’s hot today,Time & Numbers
+329,It’s cold today,Time & Numbers
+330,It’s raining,Time & Numbers
+331,It’s sunny,Time & Numbers
+332,It’s cloudy,Time & Numbers
+333,It’s windy,Time & Numbers
+334,It’s snowing,Time & Numbers
+335,It’s stormy,Time & Numbers
+336,It’s foggy,Time & Numbers
+337,It’s humid,Time & Numbers
+338,It’s dry,Time & Numbers
+339,It’s freezing,Time & Numbers
+340,It’s warm,Time & Numbers
+341,It’s chilly,Time & Numbers
+342,It’s summer,Time & Numbers
+343,It’s winter,Time & Numbers
+344,It’s autumn,Time & Numbers
+345,It’s spring,Time & Numbers
+346,I am 1 years old,Time & Numbers
+347,I am 2 years old,Time & Numbers
+348,I am 3 years old,Time & Numbers
+349,I am 4 years old,Time & Numbers
+350,I am 5 years old,Time & Numbers
+351,I am 6 years old,Time & Numbers
+352,I am 7 years old,Time & Numbers
+353,I am 8 years old,Time & Numbers
+354,I am 9 years old,Time & Numbers
+355,I am 10 years old,Time & Numbers
+356,I am 11 years old,Time & Numbers
+357,I am 12 years old,Time & Numbers
+358,I am 13 years old,Time & Numbers
+359,I am 14 years old,Time & Numbers
+360,I am 15 years old,Time & Numbers
+361,I am 16 years old,Time & Numbers
+362,I am 17 years old,Time & Numbers
+363,I am 18 years old,Time & Numbers
+364,I am 19 years old,Time & Numbers
+365,I am 20 years old,Time & Numbers
+366,I am 21 years old,Time & Numbers
+367,I am 22 years old,Time & Numbers
+368,I am 23 years old,Time & Numbers
+369,I am 24 years old,Time & Numbers
+370,I am 25 years old,Time & Numbers
+371,I am 26 years old,Time & Numbers
+372,I am 27 years old,Time & Numbers
+373,I am 28 years old,Time & Numbers
+374,I am 29 years old,Time & Numbers
+375,I am 30 years old,Time & Numbers
+376,The time is 1:00,Time & Numbers
+377,The time is 2:00,Time & Numbers
+378,The time is 3:00,Time & Numbers
+379,The time is 4:00,Time & Numbers
+380,The time is 5:00,Time & Numbers
+381,The time is 6:00,Time & Numbers
+382,The time is 7:00,Time & Numbers
+383,The time is 8:00,Time & Numbers
+384,The time is 9:00,Time & Numbers
+385,The time is 10:00,Time & Numbers
+386,The time is 11:00,Time & Numbers
+387,The time is 12:00,Time & Numbers
+388,The time is 13:00,Time & Numbers
+389,The time is 14:00,Time & Numbers
+390,The time is 15:00,Time & Numbers
+391,The time is 16:00,Time & Numbers
+392,The time is 17:00,Time & Numbers
+393,The time is 18:00,Time & Numbers
+394,The time is 19:00,Time & Numbers
+395,The time is 20:00,Time & Numbers
+396,The time is 21:00,Time & Numbers
+397,The time is 22:00,Time & Numbers
+398,The time is 23:00,Time & Numbers
+399,The time is 24:00,Time & Numbers
+400,Today is day 1 of the month,Time & Numbers
+401,Today is day 2 of the month,Time & Numbers
+402,Today is day 3 of the month,Time & Numbers
+403,Today is day 4 of the month,Time & Numbers
+404,Today is day 5 of the month,Time & Numbers
+405,Today is day 6 of the month,Time & Numbers
+406,Today is day 7 of the month,Time & Numbers
+407,Today is day 8 of the month,Time & Numbers
+408,Today is day 9 of the month,Time & Numbers
+409,Today is day 10 of the month,Time & Numbers
+410,Today is day 11 of the month,Time & Numbers
+411,Today is day 12 of the month,Time & Numbers
+412,Today is day 13 of the month,Time & Numbers
+413,Today is day 14 of the month,Time & Numbers
+414,Today is day 15 of the month,Time & Numbers
+415,Today is day 16 of the month,Time & Numbers
+416,Today is day 17 of the month,Time & Numbers
+417,Today is day 18 of the month,Time & Numbers
+418,Today is day 19 of the month,Time & Numbers
+419,Today is day 20 of the month,Time & Numbers
+420,Today is day 21 of the month,Time & Numbers
+421,Today is day 22 of the month,Time & Numbers
+422,Today is day 23 of the month,Time & Numbers
+423,Today is day 24 of the month,Time & Numbers
+424,Today is day 25 of the month,Time & Numbers
+425,Today is day 26 of the month,Time & Numbers
+426,Today is day 27 of the month,Time & Numbers
+427,Today is day 28 of the month,Time & Numbers
+428,Today is day 29 of the month,Time & Numbers
+429,Today is day 30 of the month,Time & Numbers
+430,Today is day 31 of the month,Time & Numbers
+431,Do you have Wi-Fi?,Daily Life & Technology
+432,What’s the password?,Daily Life & Technology
+433,Can I use your phone?,Daily Life & Technology
+434,Can I charge my phone?,Daily Life & Technology
+435,My phone is out of battery,Daily Life & Technology
+436,I need internet,Daily Life & Technology
+437,Can I borrow your laptop?,Daily Life & Technology
+438,Can I use your computer?,Daily Life & Technology
+439,I can’t connect to Wi-Fi,Daily Life & Technology
+440,The internet is slow,Daily Life & Technology
+441,Can you send me an email?,Daily Life & Technology
+442,Can you send me a message?,Daily Life & Technology
+443,Add me on Facebook,Daily Life & Technology
+444,Follow me on Instagram,Daily Life & Technology
+445,Do you use WhatsApp?,Daily Life & Technology
+446,Do you use Messenger?,Daily Life & Technology
+447,Do you use Viber?,Daily Life & Technology
+448,I lost my phone,Daily Life & Technology
+449,My phone was stolen,Daily Life & Technology
+450,I forgot my password,Daily Life & Technology
+451,I have a meeting,Work & Study
+452,Let’s schedule a meeting,Work & Study
+453,Can we talk later?,Work & Study
+454,I need more time,Work & Study
+455,I will send you an email,Work & Study
+456,Please reply to my email,Work & Study
+457,I am working on it,Work & Study
+458,I will finish it soon,Work & Study
+459,I need your help,Work & Study
+460,Let’s work together,Work & Study
+461,Can we discuss this?,Work & Study
+462,I agree with you,Work & Study
+463,I don’t agree,Work & Study
+464,That’s a good idea,Work & Study
+465,That’s not possible,Work & Study
+466,I will think about it,Work & Study
+467,I will call you back,Work & Study
+468,Can you explain this?,Work & Study
+469,Please wait a moment,Work & Study
+470,I need to go now,Work & Study
+471,Let’s start the project,Work & Study
+472,I will do my best,Work & Study
+473,That’s correct,Work & Study
+474,That’s wrong,Work & Study
+475,We need more information,Work & Study
+476,We need more people,Work & Study
+477,We need more time,Work & Study
+478,Can we meet tomorrow?,Work & Study
+479,Let’s take a break,Work & Study
+480,I will send the report,Work & Study
+481,I finished the task,Work & Study
+482,I am studying,Work & Study
+483,I have an exam,Work & Study
+484,I passed the exam,Work & Study
+485,I failed the exam,Work & Study
+486,I need to study,Work & Study
+487,I am doing homework,Work & Study
+488,This is difficult,Work & Study
+489,This is easy,Work & Study

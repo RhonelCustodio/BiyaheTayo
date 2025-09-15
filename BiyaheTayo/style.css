@@ -1,0 +1,771 @@
+/* Base Styles */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --danger-color: #e74c3c;
+    --warning-color: #f39c12;
+    --dark-color: #2c3e50;
+    --light-color: #ecf0f1;
+    --gray-color: #95a5a6;
+    --border-color: #ddd;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Login Modal */
+.login-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.login-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px var(--shadow-color);
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--dark-color);
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.form-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+/* Button Styles */
+.btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+.btn-secondary {
+    background-color: var(--gray-color);
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #7f8c8d;
+}
+
+.btn-success {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: #27ae60;
+}
+
+.btn-warning {
+    background-color: var(--warning-color);
+    color: white;
+}
+
+.btn-warning:hover {
+    background-color: #e67e22;
+}
+
+.btn-danger {
+    background-color: var(--danger-color);
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+}
+
+.btn-logout {
+    background: none;
+    border: none;
+    color: var(--dark-color);
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-logout:hover {
+    color: var(--primary-color);
+}
+
+.btn-close {
+    background: none;
+    border: none;
+    color: var(--gray-color);
+    font-size: 1.25rem;
+    cursor: pointer;
+    padding: 0.25rem;
+}
+
+.btn-close:hover {
+    color: var(--dark-color);
+}
+
+/* Admin Dashboard */
+.admin-dashboard {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-header {
+    background-color: white;
+    box-shadow: 0 2px 4px var(--shadow-color);
+    padding: 1rem 0;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admin-header h1 {
+    font-size: 1.25rem;
+    color: var(--dark-color);
+}
+
+.admin-main {
+    flex: 1;
+    padding: 1rem;
+}
+
+.admin-layout {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 1.5rem;
+}
+
+/* Sidebar */
+.admin-sidebar {
+    width: 250px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px var(--shadow-color);
+    padding: 1rem;
+}
+
+.sidebar-btn {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: none;
+    background: none;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: var(--dark-color);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    transition: all 0.3s;
+}
+
+.admin-sidebar ul li {
+    list-style: none;
+}
+
+.sidebar-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.sidebar-btn.active {
+    background-color: #e3f2fd;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.sidebar-btn i {
+    width: 20px;
+    text-align: center;
+}
+
+/* Content Area */
+.admin-content {
+    flex: 1;
+}
+
+.content-section {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px var(--shadow-color);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.content-section h2 {
+    margin-bottom: 1.5rem;
+    color: var(--dark-color);
+}
+
+/* Profile Section */
+.profile-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.profile-field label {
+    font-weight: 500;
+    color: var(--gray-color);
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.profile-field p {
+    font-size: 1.1rem;
+}
+
+.edit-form {
+    margin-top: 2rem;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Reorder form fields to move current password after full name */
+.form-grid {
+    display: grid;
+    grid-template-areas:
+        "full-name email"
+        "username phone"
+        "current-password current-password"
+        "new-password confirm-password";
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.form-group.full-name {
+    grid-area: full-name;
+}
+
+.form-group.email {
+    grid-area: email;
+}
+
+.form-group.username {
+    grid-area: username;
+}
+
+.form-group.phone {
+    grid-area: phone;
+}
+
+.form-group.current-password {
+    grid-area: current-password;
+}
+
+.form-group.new-password {
+    grid-area: new-password;
+}
+
+.form-group.confirm-password {
+    grid-area: confirm-password;
+}
+
+/* Section Header */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.section-actions {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.select-wrapper {
+    position: relative;
+}
+
+.select-wrapper::after {
+    content: '\f078';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: var(--gray-color);
+}
+
+.select-wrapper select {
+    appearance: none;
+    padding-right: 2.5rem;
+    border: none;
+    outline: none;
+}
+
+/* Tables */
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+th, td {
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Smooth transitions for page sections */
+.page-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.page-section.active {
+    opacity: 1;
+    transform: translateY(0);
+    display: block;
+    position: relative;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Nav link active state */
+.nav-link {
+    transition: color 0.3s ease;
+}
+
+.nav-link.active {
+    color: #57b5e7; /* Your primary color */
+    font-weight: 500;
+}
+
+
+/* Action buttons */
+.action-btn {
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    transition: all 0.2s;
+    outline: none;
+    border: none;
+    font-size: 12px;
+}
+
+.action-btn:hover {
+    transform: translateY(-1px);
+}
+
+.edit-btn {
+    background-color: #3b82f6;
+    color: white;
+    margin-right: 1rem;
+}
+
+.edit-btn:hover {
+    background-color: #2563eb;
+}
+
+.delete-btn {
+    background-color: #ef4444;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #dc2626;
+}
+
+/* Modals */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px var(--shadow-color);
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 500px;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.wide-modal {
+    max-width: 700px;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.modal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.modal-field {
+    margin-bottom: 1rem;
+}
+
+.modal-field.full-width {
+    grid-column: 1 / -1;
+}
+
+.modal-field label {
+    font-weight: 500;
+    color: var(--gray-color);
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 0.75rem;
+}
+.bg-blue-600{
+    border: none;
+    background-color: transparent;
+    color: var(--primary-color);
+}
+/* Responsive Styles */
+@media (max-width: 320px) {
+    .admin-layout {
+        flex-direction: column;
+    }
+    
+    .admin-sidebar {
+        width: 100%;
+    }
+    
+    .profile-grid,
+    .form-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "full-name"
+            "email"
+            "username"
+            "phone"
+            "current-password"
+            "new-password"
+            "confirm-password";
+    }
+    
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .section-actions {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .modal-content,
+    .wide-modal {
+        width: 95%;
+    }
+    .modal-grid {
+        grid-template-columns: 1fr;
+    }
+    .action-btn {
+        padding: rem 0.5rem;
+        border-radius: 0.25rem;
+        font-size: 0.875rem;
+        transition: all 0.2s;
+        outline: none;
+        border: none;
+        font-size: 10px;
+        width: 100%;
+    }
+    #adminEmail{
+        font-size: 12px;
+    }
+    .profile-field label{
+        font-size: 15px;
+    }
+    .profile-field #adminFullName{
+        font-size: 14px;
+    }
+    .content-section h2{
+        font-size: 16px;
+    }
+    .table-container tr th{
+        font-size: 12px;
+    }
+    #feedbackTableBody td{
+        font-size: 13px;
+    }
+    .bg-blue-600{
+        border: none;
+        background-color: transparent;
+        color: var(--primary-color);
+    }
+    .btn-logout i{
+        font-size: 15px;
+    }
+    .header-container h1{
+        font-size: 18px;
+    }
+    .sidebar-btn{
+        margin: 0 0 .5rem 0;
+    }
+    .login-container{
+        width: 20rem;
+        
+    }
+    .form-group input{
+        width: 10rem;
+    }
+    .login-container #loginForm{
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .btn-primary{
+        display: block;
+    }
+}
+
+/* Enhanced Mobile & Tablet Responsiveness */
+@media (max-width: 768px) {
+    .admin-layout {
+        flex-direction: column;
+    }
+    .admin-sidebar {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    .section-actions {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .table-container {
+        overflow-x: auto;
+    }
+    .modal-content,
+    .wide-modal {
+        width: 95%;
+        max-height: 85vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-container h1 {
+        font-size: 1rem;
+    }
+    .sidebar-btn {
+        font-size: 0.875rem;
+    }
+    .content-section h2 {
+        font-size: 1rem;
+    }
+    table th, table td {
+        font-size: 0.75rem;
+    }
+}
+
+
+/* Mobile Sidebar (Hamburger Menu) */
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: var(--dark-color);
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .admin-sidebar {
+        position: fixed;
+        top: 0;
+        left: -260px;
+        height: 100%;
+        width: 250px;
+        background-color: white;
+        box-shadow: 2px 0 6px rgba(0,0,0,0.15);
+        transition: left 0.3s ease-in-out;
+        z-index: 1001;
+    }
+
+    .admin-sidebar.active {
+        left: 0;
+    }
+
+    .sidebar-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.4);
+        z-index: 1000;
+    }
+
+    .sidebar-overlay.active {
+        display: block;
+    }
+
+    .admin-layout {
+        flex-direction: column;
+    }
+}
+
+/* NOTE:
+   Add this button inside .header-container in your HTML:
+   <button class="hamburger" id="hamburgerBtn">☰</button>
+
+   Add this overlay before </body>:
+   <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+   And add this JS before </body>:
+   <script>
+     const hamburgerBtn = document.getElementById('hamburgerBtn');
+     const sidebar = document.querySelector('.admin-sidebar');
+     const overlay = document.getElementById('sidebarOverlay');
+
+     hamburgerBtn.addEventListener('click', () => {
+       sidebar.classList.toggle('active');
+       overlay.classList.toggle('active');
+     });
+
+     overlay.addEventListener('click', () => {
+       sidebar.classList.remove('active');
+       overlay.classList.remove('active');
+     });
+   </script>
+*/
